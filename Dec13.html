@@ -32,7 +32,9 @@
 	divlist = document.getElementsByTagName("div")
 	console.log(divlist);
 
-	list = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	list = [1,52,34,6,78,286,563];
+	list.sort((a,b)=>a-b);
+	console.log(list);
 
 	for (i = 0; i < divlist.length; i = i + 1){
 		divlist[i].innerHTML = list[i]
