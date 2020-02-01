@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		p{
+			font-family: "futura";
+			color: white;
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 60px;
+		}
+		.info{
+			width: 50%;
+			height: 50%;
+		}
+		.content{
+			height:1000px;
+		}
+		#info1 {
+			background-color: red;
+		}
+		#info2 {
+			background-color: navy;
+		}
+		#info3 {
+			background-color: orange;
+		}
+		#info4 {
+			background-color: green;
+		}
+		#info3 > p{
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class = "content">
+		<div id = "info1" class = "info">
+			<p>DIV 1</p>
+		</div>
+
+		<div id = "info2" class = "info">
+			<p>DIV 2</p>
+		</div>
+
+		<div id = "info3" class = "info">
+			<p>DIV 3</p>
+		</div>
+
+		<div id = "info4" class = "info">
+			<p>DIV 4</p>
+		</div>
+	</div>
+<script>
+	console.log("Line 1");
+	console.log("Line 2");
+	console.log(document.getElementById("info1"));
+</script>
+</body>
+</html>
