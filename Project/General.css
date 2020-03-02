@@ -8,6 +8,7 @@
 		background-color: #980000ff;
 		position: sticky;
 		top: 0;
+		z-index: 2;
 	}
 
 	.button{
@@ -68,7 +69,7 @@
 		background-blend-mode: darken;
 		cursor: default;
 		text-shadow: 0px 9px 4px #450000;
-		font-family: Avenir Next Condensed;	
+		font-family: Avenir Next Condensed;
 	}
 
 	.image{
@@ -81,7 +82,7 @@
 		z-index: -1;
 	}
 
-	.allcontent{
+	.quote{
 		padding: 40px 60px;
 		font-size: 40px;
 		line-height: 70px;
@@ -110,6 +111,39 @@
 		cursor: pointer;
 	}
 
+	.cardbg{
+		display: none;
+		cursor: pointer;
+		z-index: 2;
+ 		background-color: rgba(0,0,0,0.5);
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		position: fixed;
+	}
+
+	.card{
+		display: none;
+		cursor: default;
+		z-index: 3;
+		background-color: white;
+		text-align: center;
+		width: 70%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+		padding: 30px;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+  		transition: 0.2s;
+	}
+
+	.card:hover{
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+	}
+
 	.facts{
 		padding-top: 40px;
 		padding-left: 50px;
@@ -117,7 +151,33 @@
 		font-size: 60px;
 		font-weight: bold;
 		color:white;
-		line-height: 70px;
 		text-align: left;
 		background-color: #980000ff;
+		height: auto;
+	}
+
+	.factlist{
+		padding: 40px 60px;
+		font-size: 30px;
+		line-height: 60px;
+		text-align: left;
+		overflow: hidden;
+		font-family: Roboto;
+		font-weight: lighter;
+		max-height: 430px;
+	}
+
+	.emphasis{
+		font-size: 50px;
+		text-align: center;
+	}
+
+	.parallax2{
+		background-image: url("https://www.un.org/sites/un2.un.org/files/1_j-5jxbpbu1kusvqhubz-ew.jpeg");
+		height: 900px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: -75px;
+		overflow: hidden;
+		background-attachment: fixed;
 	}
