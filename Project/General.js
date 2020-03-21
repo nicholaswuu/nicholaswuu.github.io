@@ -6,3 +6,17 @@ function ddown() {
 		dropdown.style.display = "none";
 	}
 }
+
+function info(){
+	cardbg = document.getElementById("cardbg")
+	card = document.getElementById("card")
+	cardbg.style.display = "block"
+	card.style.display = "inline-block"
+}
+
+function infoout(){
+	cardbg = document.getElementById("cardbg")
+	card = document.getElementById("card")
+	cardbg.style.display = "none"
+	card.style.display = "none"
+}

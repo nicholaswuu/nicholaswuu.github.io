@@ -1,11 +1,11 @@
 	body{
 		margin: 0;
 		font-family: Roboto;
-		font-weight:lighter;
+		font-weight: lighter;
+        height: 100%
 	}
 
-	.topnav{
-		background-color: #980000ff;
+	.topnav{		
 		position: sticky;
 		top: 0;
 		z-index: 2;
@@ -13,7 +13,6 @@
 
 	.button{
 		padding: 14px 22px;
-		background-color: #980000ff;
 		color: #fff;
 		overflow: hidden;
 		border: none;
@@ -21,10 +20,6 @@
 		font-family: Avenir Next Condensed;
 		font-weight: bold;
 		font-size: 22px;
-	}
-
-	.button:hover{
-		background-color: #bb0000ff;
 	}
 
 	.ddown{
@@ -50,25 +45,35 @@
 		background-color: #f3f3f3;
 	}
 
+	.active{
+		display: block;
+		text-decoration: none;
+		float: none;
+		font-weight: bolder;
+		color: white;
+		padding: 13px 20px;
+		font-size: 20px;
+		font-family: Avenir Next Condensed;	
+		cursor: default;
+	}
+
 	.parallax1{
-		background-image: url("https://www.undp.org/content/dam/undp/sdg/covers/sdg-cover-08.jpg");
+		position: relative;
 		height: 650px;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position-y: -75px;
 		overflow: hidden;
 		background-attachment: fixed;
+		text-align: center;
 	}
 
 	.title{
-		text-align: center;
+		position: relative;
 		font-size: 90px;
 		font-weight: bold;
 		padding-top: 250px;
 		color: white;
-		background-blend-mode: darken;
 		cursor: default;
-		text-shadow: 0px 9px 4px #450000;
 		font-family: Avenir Next Condensed;
 	}
 
@@ -76,9 +81,6 @@
 		position: relative;
 		float: left;
 		overflow: hidden;
-		background-image: url("https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/08/E-Inverted-Icons_WEB-08-1024x1024.png");
-		top: -225px;
-		left: -70px;
 		z-index: -1;
 	}
 
@@ -95,10 +97,8 @@
 
 	.info{
 		width: 150px;
-		border-color: #980000ff;
 		border-radius: 3px;
 		border-width: 2px;
-		color: #980000ff;
 		background-color: white;
 		font-size: 30px;
 		transition-duration: 0.2s;
@@ -106,38 +106,40 @@
 	}
 
 	.info:hover{
-		background-color: #980000ff;
 		color: white;
 		cursor: pointer;
 	}
-
 	.cardbg{
 		display: none;
-		cursor: pointer;
+		position: fixed;
 		z-index: 2;
  		background-color: rgba(0,0,0,0.5);
+ 		padding-top: 50px;
 		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
 		width: 100%;
-		position: fixed;
+		height: 100%;
+		padding-left: 200px;
+		overflow: auto;
 	}
-
+	.cardtitle{
+		font-size: 40px;
+		font-family: Avenir Next Condensed;
+	}
+	.x{
+		float:right;
+		font-size: 35px;
+		cursor: pointer;
+		font-weight: bold;
+	}
 	.card{
-		display: none;
 		cursor: default;
-		z-index: 3;
 		background-color: white;
-		text-align: center;
+		margin: auto;
+		font-size: 20px;
 		width: 70%;
-		height: auto;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 50px;
-		padding: 30px;
+		padding: 50px;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
-  		transition: 0.2s;
+		line-height: 33px;
 	}
 
 	.card:hover{
@@ -147,37 +149,47 @@
 	.facts{
 		padding-top: 40px;
 		padding-left: 50px;
-		padding-right: 50px;
+		padding-right: 40px;
 		font-size: 60px;
 		font-weight: bold;
-		color:white;
+		color: white;
 		text-align: left;
-		background-color: #980000ff;
 		height: auto;
+		z-index: 1;
 	}
 
 	.factlist{
 		padding: 40px 60px;
+		padding-right: 0px;
 		font-size: 30px;
 		line-height: 60px;
 		text-align: left;
 		overflow: hidden;
 		font-family: Roboto;
 		font-weight: lighter;
-		max-height: 430px;
+		z-index: 1;
 	}
 
 	.emphasis{
-		font-size: 50px;
-		text-align: center;
+		font-size: 55px;
 	}
 
 	.parallax2{
-		background-image: url("https://www.un.org/sites/un2.un.org/files/1_j-5jxbpbu1kusvqhubz-ew.jpeg");
-		height: 900px;
+        position: sticky;
+		background-size: 100%;
 		background-repeat: no-repeat;
-		background-size: cover;
-		background-position-y: -75px;
-		overflow: hidden;
-		background-attachment: fixed;
+		text-align: center;
+		z-index: -1;
+	}
+
+	.card2{
+		position: relative;
+		background-color: white;
+		width: 70%;
+		height: auto;
+		padding: 40px;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 0
 	}
