@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="General.css">
+<style>
+
+	.topnav{
+		background-color: #e2c816;
+	}
+	.button{
+		background-color: #e2c816;
+	}
+	.button:hover{
+		background-color: #fcde19;
+	}
+	.active{
+		background-color: #e2c816;
+	}
+	.parallax1{
+		background-image: url("https://outline-prod.imgix.net/20200226-KHgygUAuHBWErRjBSOtR?auto=format&q=60&w=1280&s=be84707d5f67ab870d9c2ba02dd89686");
+		background-position-y: -75px;
+	}
+	.title{
+		text-shadow: 0px 9px 4px #574e13;
+	}
+	.image{
+		top: -225px;
+		left: -70px;
+	}
+	.info{
+		border-color: #CCB30C;
+		color: #CCB30C;
+		background-color: white;
+		float: left;
+	}
+	.info:hover{
+		background-color: #CCB30C;
+		color: white;
+	}
+	.facts{
+		background-color: white;
+		color: #CCB30C
+	}
+	.parallax2{
+		background-image: url("https://static1.squarespace.com/static/5af718fb8ab722c6b4a05028/5bc3b782104c7b44f2eab7ae/5c75af7b9140b734ee253b26/1551222023449/water.jpg?format=1500w");
+		top: 50px;
+        height: 760px;
+	}
+
+	.parallax3{
+		background-image: url("https://g.foolcdn.com/editorial/images/548152/solar-and-wind-with-urban-background.jpg");
+		top: 50px;
+        height: 760px;
+	}
+
+</style>
+</head>
+<body>
+
+<div class = "topnav">
+  <button class = "button" id = "dropdown" onclick="ddown()">What You Can Do &#8744;</button>
+  <div class = "ddown" id = "content" style = "display: none;">
+  	<a href = "Goal8.html">Goal 8: Decent Work and Economic Growth</a>
+  	<a href = "Goal12.html">Goal 12: Responsible Consumption and Production</a>
+  	<a href = "Commonlink.html">Goal 8 + Goal 12: Common Link</a>
+  	<div class = "active">What You Can Do</div>
+  </div>
+</div>
+
+<div class = "parallax1"><div class = "title">What You Can Do</div></div>
+
+<div class = "facts">
+	<div style = "padding-left: 40px">FOOD</div>
+	<div class = "factlist" style = "padding-left: 50px; position: relative">
+	<canvas id = "ctx1" height = "600" width = "670" style = "position: relative; float: right;"></canvas>
+	<b class = "emphasis">1. Use "Ugly" Produce</b><br>They're just as good and often discounted<br><br>
+	<b class = "emphasis">2. Make a Broth</b><br>Use vegetable scraps for a vegetable broth, or meat bones for a stock<br><br>
+	<b class = "emphasis">3. Compost</b><br> Simple, easy, and good for the environment<br><br>
+	<a href = "https://www.fda.gov/food/consumers/tips-reduce-food-waste" target="_blank"><button class="info">INFO</button></a>
+	</div>
+</div>
+
+<div class = "parallax2"></div>
+
+<div class = "facts" style="background-color: #CCB30C; color: white;">
+	<div style = "padding-left: 40px;">WATER</div>
+	<div class = "factlist" style = "padding-left: 50px; position: relative">
+	<canvas id = "ctx2" height = "600" width = "530" style = "position: relative; float: left;"></canvas>
+	<b class = "emphasis">1. Insulate Your Water Pipes</b><br>Stop wasting water waiting for the water to warm up<br><br>
+	<b class = "emphasis">2. Full Loads Only</b><br>In both your dishwasher and laundry machine, full loads reduces the amount of times you run it<br><br>
+	<b class = "emphasis">3. Check for Household Leaks</b><br>These can waste 9,400 gallons of water annually<br><br>
+	<a href="https://www.watercalculator.org/how-to-save-water/" target="_blank"><button class="info2">INFO</button></a>
+	</div>
+</div>
+<div class = "parallax3"></div>
+<div class = "facts">
+	<div style = "padding-left: 40px">ENERGY</div>
+	<div class = "factlist" style = "padding-left: 50px; position: relative">
+	<canvas id = "ctx3" height = "600" width = "500" style = "position: relative; float: right;"></canvas>
+	<b class = "emphasis">1. Lower the Temperature</b><br>Lowering it by just 2°C would save 5% on the heating bill<br><br>
+	<b class = "emphasis">2. Unplug unused electronics</b><br>This accounts for 10% of your energy use, and can save $50<br><br>
+	<b class = "emphasis">3. Use the Curtains</b><br>Let the sun heat your home in winter or keep it out in the summer<br><br>
+	<a href = "https://www.bchydro.com/powersmart/residential/savings-and-rebates/everyday-electricity-saving-tips.html?WT.mc_id=rd_21tips" target="_blank"><button class="info">INFO</button></a>
+	</div>
+</div>
+</body>
+
+<script src = "General.js"></script>
+<script>
+	//Canvas 1
+	var food = ["Grains", "Dairy", "Meat", "Poultry", "Seafood", "Fruits", "Vegetables"]
+	var data = [31, 31, 27, 22, 39, 29, 30]
+	var canvas1 = document.getElementById("ctx1")
+	var ctx1 = canvas1.getContext("2d");
+		for(i=0; i<51; i=i+10){
+			ctx1.font = "15px Roboto";
+			ctx1.fillStyle = "#CCB30C";
+			ctx1.fillText(i+"%", 33, 435-i*7);
+			ctx1.lineWidth = 2;
+			ctx1.strokeStyle = "#EFDB8D";
+			ctx1.beginPath();
+			ctx1.moveTo(650, 430-i*7);
+			ctx1.lineTo(67, 430-i*7);
+			ctx1.stroke();
+		}
+		for(i=0; i<7; i++){
+			ctx1.font = "15px Roboto";
+			ctx1.fillStyle = "#BFA600";
+			ctx1.textAlign = "center";
+			ctx1.fillText(food[i], i*80+120, 450);
+			ctx1.beginPath();
+			ctx1.rect(i*80+105,430-data[i]*7,30,data[i]*7)
+			ctx1.fillStyle = "#BFA600";
+			ctx1.fill();
+		}
+	ctx1.textAlign = "left";
+	ctx1.font = "25px Roboto";
+	ctx1.fillStyle = "#CCB30C"
+	ctx1.fillText("Food Waste in the US", 0, 20);
+	ctx1.font = "20px Roboto";
+	ctx1.fillStyle = "#CCB30C";
+	ctx1.fillText("Total Food Wasted: 31%", 0, 540);
+	ctx1.font = "18px Roboto";
+	ctx1.fillText("Commodity", 300, 500);
+
+	ctx1.strokeStyle = "#CCB30C";
+	ctx1.lineWidth = 2;
+	ctx1.beginPath();
+	ctx1.moveTo(67, 430);
+	ctx1.lineTo(67, 50);
+	ctx1.stroke();
+	ctx1.beginPath();
+	ctx1.moveTo(650, 430);
+	ctx1.lineTo(67, 430);
+	ctx1.stroke();
+
+	ctx1.translate(-227, 400);
+	ctx1.rotate(-Math.PI / 2);
+	ctx1.fillText("Percent Wasted", 80, 240);
+
+	//Canvas 2
+
+	var canvas2 = document.getElementById("ctx2");
+	var ctx2 = canvas2.getContext("2d");
+	ctx2.font = "25px Roboto";
+	ctx2.fillStyle = "#ffffff";
+	ctx2.fillText("Opportunities for Savings", 0, 20);
+	ctx2.font = "20px Roboto";
+	ctx2.fillStyle = "#FFF193";
+	ctx2.fillText("From using more efficient appliances", 0, 55);
+	ctx2.fillText("Total Savings: $380 annually", 0, 520);
+	ctx2.beginPath();
+	ctx2.lineWidth = 90
+	ctx2.arc(200, 270, 140, 0, 2 * Math.PI);
+	ctx2.strokeStyle = "#FEE95C";
+	ctx2.stroke();
+	ctx2.beginPath();
+	ctx2.arc(200, 270, 140, 0, 0.76 * Math.PI);
+	ctx2.strokeStyle = "#ffffff";
+	ctx2.stroke();
+	ctx2.font = "20px Roboto";
+	ctx2.fillStyle = "white"
+	ctx2.fillText("Potential Savings", 250, 480);
+	ctx2.fillStyle = "#CCB30C"
+	ctx2.fillText("38%", 220, 410);
+
+	//Canvas 3
+	var canvas3 = document.getElementById("ctx3");
+	var ctx3 = canvas3.getContext("2d");
+	ctx3.font = "20px Roboto";
+	ctx3.fillStyle = "black"
+	ctx3.fillText("Insert Graph here", 200, 300);
+</script>
+</html>

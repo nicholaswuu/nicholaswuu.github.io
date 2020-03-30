@@ -109,6 +109,25 @@
 		color: white;
 		cursor: pointer;
 	}
+
+	.info2{
+		color: white;
+		background-color: #CCB30C;
+		border-color: white;
+		width: 150px;
+		border-radius: 3px;
+		border-width: 2px;
+		font-size: 30px;
+		transition-duration: 0.2s;
+		float: left;
+	}
+	
+	.info2:hover{
+		color: #CCB30C;
+		background-color: white;
+		cursor: pointer;
+	}
+
 	.cardbg{
 		display: none;
 		position: fixed;
@@ -130,6 +149,10 @@
 		font-size: 35px;
 		cursor: pointer;
 		font-weight: bold;
+		color: #808080;
+	}
+	.x:hover{
+		color: #000000;
 	}
 	.card{
 		cursor: default;
@@ -157,7 +180,6 @@
 		height: auto;
 		z-index: 1;
 	}
-
 	.factlist{
 		padding: 40px 60px;
 		padding-right: 0px;
@@ -176,7 +198,23 @@
 
 	.parallax2{
         position: sticky;
-		background-size: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		text-align: center;
+		z-index: -1;
+	}
+
+	.parallax3{
+        position: sticky;
+		background-size: cover;
+		background-repeat: no-repeat;
+		text-align: center;
+		z-index: -1;
+	}
+	
+	.parallax4{
+        position: sticky;
+		background-size: cover;
 		background-repeat: no-repeat;
 		text-align: center;
 		z-index: -1;

@@ -14,12 +14,6 @@
 	.button:hover{
 		background-color: #bb0000;
 	}
-	.x{
-		color: #808080;
-	}
-	.x:hover{
-		color: #000000;
-	}
 	.active{
 		background-color: #aa0000;
 	}
@@ -115,9 +109,9 @@
 </div>
 
 <div class = "facts">
-<div style = "padding-left: 40px">FACTS AND FIGURES</div>
-<div class = "factlist" style = "padding-left: 50px; position: relative">
-<canvas id = "ctx" height = "550" width = "530" style = "position: relative; float: left; left: -50px"></canvas>
+	<div style = "padding-left: 40px">FACTS AND FIGURES</div>
+	<div class = "factlist" style = "padding-left: 50px; position: relative">
+	<canvas id = "ctx" height = "550" width = "530" style = "position: relative; float: left; left: -50px"></canvas>
 	<b class = "emphasis">470 million jobs</b><br>needed globally for new workers between 2016 and 2030<br><br>
 	<b class = "emphasis">2.2 billion people</b><br> (nearly 30%) in the world live below the US $2 poverty line<br><br>
 	<b class = "emphasis">1.9% growth rate</b><br> of real GDP per capita in 2017, down from 3% in 2010
@@ -130,7 +124,7 @@
 
 <script src = "General.js"></script>
 <script>
-list = [4.9,5.5,5.6,3,-0.1,5.4,4.3,3.5,3.5,3.6,3.5,3.4,3.8,3.6,3]
+var list = [4.9,5.5,5.6,3,-0.1,5.4,4.3,3.5,3.5,3.6,3.5,3.4,3.8,3.6,3]
 var canvas = document.getElementById("ctx");
 var ctx = canvas.getContext("2d");
 

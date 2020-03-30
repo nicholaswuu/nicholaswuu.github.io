@@ -14,12 +14,6 @@
 	.button:hover{
 		background-color: #FF660B;
 	}
-	.x{
-		color: #808080;
-	}
-	.x:hover{
-		color: #000000;
-	}
 	.active{
 		background-color: #DF5300;
 	}
@@ -29,10 +23,6 @@
 	}
 	.title{
 		text-shadow: 0px 5px 10px #883300;
-	}
-	.image{
-		padding: 40px;
-		padding-right: 120px;
 	}
 	.info{
 		border-color: #DF5300;
@@ -82,9 +72,9 @@
 </div>
 
 <div class = "facts">
-<div style = "padding-left: 40px">RESOURCE EFFICIENCY</div>
-<div class = "factlist" style = "padding-left: 50px; position: relative">
-<canvas id = "ctx" height = "550" width = "500" style = "position: relative; float: left;"></canvas>
+	<div style = "padding-left: 40px">RESOURCE EFFICIENCY</div>
+	<div class = "factlist" style = "padding-left: 50px; position: relative">
+	<canvas id = "ctx" height = "550" width = "500" style = "position: relative; float: left;"></canvas>
 	<b class = "emphasis">7% higher GDP</b><br> from resource efficiency in G20 countries<br><br>
 	<b class = "emphasis">USD $2 trillion</b><br> added to global economy from resource efficiency annually by 2050<br><br>
 	<b class = "emphasis">72% of the worlds resources</b><br> are consumed by the billion richest people<br>
@@ -107,7 +97,7 @@ ctx.fillText("Opportunities for Resource Savings", 0, 20);
 ctx.font = "20px Roboto";
 ctx.fillStyle = "#FFB78C";
 ctx.fillText("USD $ billion (2010)", 0, 55);
-ctx.fillText("Total: 3.57 Trillion USD", 0, 500);
+ctx.fillText("Total: 3.57 Trillion USD", 0, 520);
 ctx.beginPath();
 ctx.lineWidth = 80
 ctx.arc(200, 270, 140, 0, 2 * Math.PI);
@@ -119,11 +109,19 @@ ctx.strokeStyle = "#7EEAFF";
 ctx.stroke();
 ctx.beginPath();
 ctx.arc(200, 270, 140, 0, 1.3422969188 * Math.PI);
-ctx.strokeStyle = "#f78024";
+ctx.strokeStyle = "#ffcf46";
 ctx.stroke();
 ctx.beginPath();
 ctx.arc(200, 270, 140, 0, 0.4453781513 * Math.PI);
-ctx.strokeStyle = "#ffcf46";
+ctx.strokeStyle = "#f78024";
 ctx.stroke();
+ctx.fillStyle = "#AAAAAA";
+ctx.fillText("Other: 892", 320, 100);
+ctx.fillStyle = "#7EEAFF";
+ctx.fillText("Water: 282", 10, 100);
+ctx.fillStyle = "#ffcf46";
+ctx.fillText("Energy: 1,601", 0, 460);
+ctx.fillStyle = "#f78024";
+ctx.fillText("Food: 795", 320, 450);
 </script>
 </html>

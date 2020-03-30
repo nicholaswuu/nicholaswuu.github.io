@@ -13,12 +13,6 @@
 	.button:hover{
 		background-color: #FCB060;
 	}
-	.x{
-		color: #808080;
-	}
-	.x:hover{
-		color: #000000;
-	}
 	.active{
 		background-color: #e69138;
 	}
@@ -111,9 +105,9 @@
 </div>
 
 <div class = "facts">
-<div style = "padding-left: 40px">FACTS AND FIGURES</div>
-<div class = "factlist" style = "padding-left: 50px; position: relative">
-<canvas id = "ctx" height = "550" width = "590" style = "position: relative; float: left; left: -50px"></canvas>
+	<div style = "padding-left: 40px">FACTS AND FIGURES</div>
+	<div class = "factlist" style = "padding-left: 50px; position: relative">
+	<canvas id = "ctx" height = "550" width = "590" style = "position: relative; float: left; left: -50px"></canvas>
 	<b class = "emphasis">83 billion tonnes </b><br> increase in resource consumption from 1900 to 2017<br><br>
 	<b class = "emphasis">THREE planets needed</b><br>to sustain resource consumption for a population of 9.6 billion<br><br>
 	<b class = "emphasis">1/3 of ALL food produced</b><br> is wasted each year, equivalent to $1 trillion
@@ -126,7 +120,7 @@
 
 <script src = "General.js"></script>
 <script>
-data = [263385693.7, 267788016.1, 271478121.6, 285364129.2, 301898677.4, 315845686.4, 330188763.1, 344365476, 350197458, 352420229.7, 373303791.9, 392455642.3, 390919511.8, 402882325.7, 409037825.2, 417306579.9, 427511463.8, 437859803.3]
+var data = [263385693.7, 267788016.1, 271478121.6, 285364129.2, 301898677.4, 315845686.4, 330188763.1, 344365476, 350197458, 352420229.7, 373303791.9, 392455642.3, 390919511.8, 402882325.7, 409037825.2, 417306579.9, 427511463.8, 437859803.3]
 
 var canvas = document.getElementById("ctx");
 var ctx = canvas.getContext("2d");
