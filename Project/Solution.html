@@ -40,9 +40,21 @@
 		background-color: #CCB30C;
 		color: white;
 	}
-	.facts{
+	.method{
+		padding-top: 40px;
+		padding-left: 50px;
+		padding-right: 40px;
+		font-size: 60px;
+		font-weight: bold;
+		text-align: left;
+		height: auto;
+		z-index: 1;
 		background-color: white;
 		color: #CCB30C
+	}
+	div:nth-of-type(5n){
+		background-color: #CCB30C;
+		color: white;
 	}
 	.parallax2{
 		background-image: url("https://static1.squarespace.com/static/5af718fb8ab722c6b4a05028/5bc3b782104c7b44f2eab7ae/5c75af7b9140b734ee253b26/1551222023449/water.jpg?format=1500w");
@@ -72,7 +84,7 @@
 
 <div class = "parallax1"><div class = "title">What You Can Do</div></div>
 
-<div class = "facts">
+<div class = "method">
 	<div style = "padding-left: 40px">FOOD</div>
 	<div class = "factlist" style = "padding-left: 50px; position: relative">
 	<canvas id = "ctx1" height = "600" width = "670" style = "position: relative; float: right;"></canvas>
@@ -85,7 +97,7 @@
 
 <div class = "parallax2"></div>
 
-<div class = "facts" style="background-color: #CCB30C; color: white;">
+<div class = "method">
 	<div style = "padding-left: 40px;">WATER</div>
 	<div class = "factlist" style = "padding-left: 50px; position: relative">
 	<canvas id = "ctx2" height = "600" width = "530" style = "position: relative; float: left;"></canvas>
@@ -95,8 +107,9 @@
 	<a href="https://www.watercalculator.org/how-to-save-water/" target="_blank"><button class="info2">INFO</button></a>
 	</div>
 </div>
+
 <div class = "parallax3"></div>
-<div class = "facts">
+<div class = "method">
 	<div style = "padding-left: 40px">ENERGY</div>
 	<div class = "factlist" style = "padding-left: 50px; position: relative">
 	<b class = "emphasis">1. Lower the Temperature</b><br>Lowering it by just 2°C would save 5% on the heating bill<br><br>
@@ -183,6 +196,7 @@
 	ctx2.font = "20px Roboto";
 	ctx2.fillStyle = "white"
 	ctx2.fillText("Potential Savings", 250, 480);
+	ctx2.fillText("62%", 120, 160);
 	ctx2.fillStyle = "#CCB30C"
 	ctx2.fillText("38%", 220, 410);
 </script>

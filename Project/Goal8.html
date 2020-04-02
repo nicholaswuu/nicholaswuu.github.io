@@ -115,17 +115,33 @@
 	<div class = "factlist" style = "padding-left: 50px; position: relative">
 	<canvas id = "ctx" height = "550" width = "530" style = "position: relative; float: left; left: -50px"></canvas>
 	<b class = "emphasis">470 million jobs</b><br>needed globally for new workers between 2016 and 2030<br><br>
-	<b class = "emphasis">2.2 billion people</b><br> (nearly 30%) in the world live below the US $2 poverty line<br><br>
-	<b class = "emphasis">1.9% growth rate</b><br> of real GDP per capita in 2017, down from 3% in 2010
+	<b class = "emphasis">2.2 billion people</b><br> (nearly 30%) in the world live below the US $1.90 poverty line<br><br>
+	<b class = "emphasis">1.9% growth rate</b><br> of real GDP per capita in 2017, down from 3% in 2010<br><br>
+	<input type="text" placeholder="Country..." id = "searchbar" class="search">
 	</div>
 </div>
 
 <div class = "parallax2"><div class = "title" style = "padding-top: 300px">Why is this important?</div></div>
-	<div class="card2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat eros risus, id laoreet odio tempus et. Aenean malesuada varius enim. Cras libero urna, sagittis vitae rhoncus vitae, varius at mi. Etiam eu sodales enim, et porta augue. Donec enim mauris, venenatis vitae maximus vel, maximus vel nibh. In aliquet neque ac urna porta mattis. Nulla facilisi. Praesent dolor nibh, maximus vel laoreet non, iaculis et elit. Maecenas dapibus dictum dolor non tempor. Sed rutrum nec lorem quis commodo. Cras posuere, felis quis rutrum sagittis, felis massa sagittis tellus, nec vulputate dolor dui vel nunc. Sed eleifend cursus massa sit amet aliquet. Pellentesque sed sagittis magna. Maecenas commodo, massa quis elementum dictum, ante nulla accumsan nibh, ac tristique magna lacus fringilla ipsum. Donec mollis, ipsum eget convallis rutrum, ligula tortor vehicula quam, vulputate vulputate risus ligula eget purus. Nulla volutpat in ipsum ut fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum vulputate mollis mauris, volutpat pretium dolor commodo ac. Maecenas nec lorem rhoncus, sodales elit id, placerat odio. Vivamus ornare egestas viverra. Nulla et porta est. Vivamus eget vehicula turpis. Cras posuere, felis quis rutrum sagittis, felis massa sagittis tellus, nec vulputate dolor dui vel nunc. Sed eleifend cursus massa sit amet aliquet. Pellentesque sed sagittis magna. Maecenas commodo, massa quis elementum dictum, ante nulla accumsan nibh, ac tristique magna lacus fringilla ipsum. Donec mollis, ipsum eget convallis rutrum, ligula tortor vehicula quam, vulputate vulputate risus ligula eget purus. Nulla volutpat in ipsum ut fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum vulputate mollis mauris, volutpat pretium dolor commodo ac. Maecenas nec lorem rhoncus, sodales elit id, placerat odio. Vivamus ornare egestas viverra. Nulla et porta est. Vivamus eget vehicula turpis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat eros risus, id laoreet odio tempus et. Aenean malesuada varius enim. Cras libero urna, sagittis vitae rhoncus vitae, varius at mi. Etiam eu sodales enim, et porta augue. Donec enim mauris, venenatis vitae maximus vel, maximus vel nibh. In aliquet neque ac urna porta mattis. Nulla facilisi. Praesent dolor nibh, maximus vel laoreet non, iaculis et elit. Maecenas dapibus dictum dolor non tempor. Sed rutrum nec lorem quis commodo. Cras posuere, felis quis rutrum sagittis, felis massa sagittis tellus, nec vulputate dolor dui vel nunc. Sed eleifend cursus massa sit amet aliquet. Pellentesque sed sagittis magna. Maecenas commodo, massa quis elementum dictum, ante nulla accumsan nibh, ac tristique magna lacus fringilla ipsum. Donec mollis, ipsum eget convallis rutrum, ligula tortor vehicula quam, vulputate vulputate risus ligula eget purus. Nulla volutpat in ipsum ut fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum vulputate mollis mauris, volutpat pretium dolor commodo ac. Maecenas nec lorem rhoncus, sodales elit id, placerat odio. Vivamus ornare egestas viverra. Nulla et porta est. Vivamus eget vehicula turpis. Cras posuere, felis quis rutrum sagittis, felis massa sagittis tellus, nec vulputate dolor dui vel nunc. Sed eleifend cursus massa sit amet aliquet.</div>
+	<div class="card2">
+		<div class = "card2content">
+			<b>What’s the goal here?</b><br><br>
+			To promote inclusive and sustainable economic growth, employment and decent work for all.<br><br>
+			<b>Why?</b><br><br>
+			Poverty eradication is only possible through stable and well-paid jobs. Nearly 2.2 billion people live below the US$1.90 poverty line.<br><br>
+			<b>How many jobs are needed?</b><br><br>
+			470 million jobs are needed globally for new entrants to the labour market between 2016 and 2030, just to keep up with the growth of the global working age <br><bR>
+			<b>So if they all got a job will extreme poverty end?</b><br><br>
+			In addition to creating jobs, we also need to improve conditions for the some 783 million women and men who are working, but not earning enough to lift themselves and their families out of poverty. In addition, women and girls must enjoy equal access to equal opportunities with men and boys for employment. <br><bR>
+			<b>I have a job. Why does this matter to me?</b><br><br>
+			Society as a whole benefits when more people are being productive and contributing to their country’s growth. Productive employment and “decent work” are key elements to achieving fair globalization and poverty reduction. In addition, unemployment can lead to unrest and disrupt peace if it is left unaddressed.<bR><br>
+		</div>
+	</div>
 </body>
 
 <script src = "General.js"></script>
 <script>
+
+//Graph
 var list = [4.9,5.5,5.6,3,-0.1,5.4,4.3,3.5,3.5,3.6,3.5,3.4,3.8,3.6,3]
 var canvas = document.getElementById("ctx");
 var ctx = canvas.getContext("2d");
@@ -174,5 +190,14 @@ ctx.fillText("Year Since 2000", 240, 490);
 ctx.translate(-227, 360);
 ctx.rotate(-Math.PI / 2);
 ctx.fillText("Percent change in GDP", 0, 240);
+
+//Search bar
+var countries=["Albania", "Argentina", "Armenia", "Austria", "Bangladesh", "Belarus", "Belgium", "Benin", "Bhutan", "Bolivia", "Bosnia", "and", "Herzegovina", "Brazil", "Bulgaria", "Burkina", "Faso", "Burundi", "Cameroon", "Canada", "Chile", "China", "Colombia", "Comoros", "Costa", "Rica", "Cote", "d'Ivoire", "Croatia", "Cyprus", "Czech", "Republic", "Democratic", "Republic", "of", "Congo", "Denmark", "Djibouti", "Dominican", "Republic", "East", "Asia", "&", "Pacific", "Ecuador", "Egypt", "El", "Salvador", "Estonia", "Ethiopia", "Europe", "&", "Central", "Asia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Guatemala", "Guinea", "Haiti", "Honduras", "Hungary", "Iceland", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Kazakhstan", "Kenya", "Kosovo", "Kyrgyzstan", "Laos", "Latin", "America", "&", "Caribbean", "Latvia", "Liberia", "Lithuania", "Luxembourg", "Macedonia", "Madagascar", "Malaysia", "Malta", "Mauritania", "Mauritius", "Mexico", "Micronesia", "(country)", "Middle", "East", "&", "North", "Africa", "Moldova", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Netherlands", "Nicaragua", "Niger", "Norway", "Pakistan", "Palestine", "Panama", "Paraguay", "Peru", "Portugal", "Romania", "Russia", "Rwanda", "Seychelles", "Slovakia", "Solomon", "Islands", "South", "Africa", "South", "Asia", "South", "Korea", "Spain", "Sri", "Lanka", "Sub-Saharan", "Africa", "Sweden", "Switzerland", "Tajikistan", "Thailand", "Timor", "Togo", "Turkey", "Uganda", "Ukraine", "United", "Kingdom", "United", "States", "Uruguay", "Vietnam", "Yemen", "Zambia"]
+var years = ["2012", "2016", "2016", "2015", "2016", "2016", "2015", "2015", "2017", "2016", "2015", "2015", "2014", "2014", "2013", "2014", "2013", "2015", "2015", "2016", "2013", "2016", "2015", "2015", "2015", "2015", "2012", "2015", "2013", "2016", "2015", "2016", "2015", "2016", "2015", "2015", "2015", "2013", "2015", "2015", "2017", "2015", "2016", "2015", "2012", "2015", "2014", "2012", "2012", "2016", "2015", "2014", "2017", "2014", "2012", "2015", "2012", "2015", "2015", "2015", "2016", "2016", "2012", "2015", "2015", "2014", "2015", "2015", "2014", "2012", "2015", "2015", "2014", "2012", "2016", "2013", "2015", "2016", "2016", "2014", "2013", "2014", "2015", "2015", "2015", "2014", "2014", "2015", "2015", "2016", "2016", "2016", "2016", "2015", "2015", "2015", "2013", "2013", "2015", "2013", "2014", "2013", "2012", "2015", "2016", "2015", "2015", "2015", "2015", "2015", "2014", "2015", "2016", "2016", "2016", "2015", "2016", "2016", "2016", "2014", "2015"]
+var  values = ["1.1","0.6","1.8","0.7","14.8","0","0","49.6","1.5","7.1","0.2","3.4","1.5","43.7","71.7","23.8","0.5","1.3","0.7","4.5","18.1","1.3","28.2","0.7","0","0","77.1","0.2","22.5","1.6","2.3","3.6","1.3","2.2","0.5","26.7","1.5","1.4","0","0","3.4","10.1","4.2","0","12","1.5","8.7","35.3","23.5","16","0.5","0","5.7","0.2","2.5","0.2","0.5","2","0","36.8","0.6","1.4","22.7","4.1","0.7","38.6","0.7","0.2","5","77.6","0","0","6","0.5","2.5","16","5","0.2","0.5","0","1","62.9","6.4","13.4","0","3.2","44.5","0.2","4","1","2.2","1.7","3.5","0.5","5.7","0","56","1.1","0.7","25.1","18.9","16.2","0.2","1","0.7","41.1","0.5","0","4.8","0","30.3","49.2","0.2","41.6","0.1","0.2","1.2","0.1","2","18.8","57.5"]
+
+
+
+
 </script>
 </html>
