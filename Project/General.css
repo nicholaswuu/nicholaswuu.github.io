@@ -187,13 +187,14 @@
 		line-height: 60px;
 		text-align: left;
 		overflow: hidden;
-		font-family: Roboto;
+		font-family: Roboto Light;
 		font-weight: lighter;
 		z-index: 1;
 	}
 
 	.emphasis{
 		font-size: 55px;
+		font-family: Roboto;
 	}
 
 	.parallax2{
