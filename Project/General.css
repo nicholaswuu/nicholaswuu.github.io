@@ -235,17 +235,24 @@
 	}
 
 	.search{
-		width: 90%;
-		height: 30px;
+		width: 85%;
+		height: 35px;
 		font-size: 18px;
 	}
 
-	.searchbutton{
-		width: 150px;
-		border-radius: 3px;
-		border-width: 2px;
+	.searchbar{
 		background-color: white;
-		font-size: 30px;
-		transition-duration: 0.2s;
-		float: right;
+		font-size: 60px;
+		font-weight: bold;
+		color: white;
+		text-align: left;
+		height: auto;
+		z-index: 1;
+		padding: 50px 40px;
+	}
+
+	.searchresult{
+		background-color: white;
+		padding: 40px;
+		padding-top: 0px;
 	}
