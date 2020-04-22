@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<canvas id = "canvas" width = 900px height = 900px></canvas>
+</body>
+<script>
+	var canvas = document.getElementById('canvas')
+	var ctx = canvas.getContext("2d")
+
+	var grd = ctx.createLinearGradient(0,0,200,0);
+	grd.addColorStop(0,"#ffdc40");
+	grd.addColorStop(1,"#ffe673");
+
+	ctx.beginPath();
+	ctx.lineWidth = 30
+	ctx.arc(70, 170, 20, 0, 2 * Math.PI);
+	ctx.strokeStyle = "grey";
+	ctx.stroke();
+	ctx.beginPath()
+	ctx.arc(520, 170, 20, 0, 2 * Math.PI);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.rect(0,0,500,170);
+	ctx.fillStyle = grd;
+	ctx.fill();
+	ctx.beginPath();
+	ctx.rect(500,80,70,90);
+	ctx.fillStyle = grd;
+	ctx.fill();
+	ctx.beginPath();
+	ctx.lineWidth = 30
+	ctx.arc(50, 180, 20, 0, 2 * Math.PI);
+	ctx.strokeStyle = "grey";
+	ctx.stroke();
+	ctx.beginPath()
+	ctx.arc(500, 180, 20, 0, 2 * Math.PI);
+	ctx.stroke();
+</script>
+</html>
