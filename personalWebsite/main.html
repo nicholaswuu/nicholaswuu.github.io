@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -13,7 +14,16 @@
 <body>
 	<div class="parallax" id = "parallax">
 			<div class = "topnav" id = "topnav">
-				<img src = "Logo.png" width=4% class = "logo">
+				<div class="fixed-action-btn" style="position: relative; right: 0px; bottom:0px;">
+				  	<img src = "Logo.png" width="70px" class = "logo">
+				  </a>
+				  <ul>
+				  	<li><a class="btn-floating red" href = "mailto:nicholaswu0707@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+				    <li><a class="btn-floating" style = "background-color: #0072b1" href="https://www.linkedin.com/in/nicholas-wu-1247551b7/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+				    <li><a class="btn-floating" style = "background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%" href="https://www.instagram.com/_nicholas.wu_/" target="_blank"><i class="fa fa-instagram" style = "font-size:24px"></i></a></li>
+				    <li><a class="btn-floating black" href = "https://github.com/nicholaswuu" target="_blank"><i class="fa fa-github" style = "color: white"></i></a></li>
+				  </ul>
+				</div>
 			</div>
 		<div class="parallax__group">
 			<div class="parallax__layer parallax__layer--deep">
@@ -55,5 +65,14 @@ function myFunction() {
     document.getElementById("topnav").className = "notscrolled";
   }
 }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'right',
+      hoverEnabled: false
+    });
+  });
+
 </script>
 </html>

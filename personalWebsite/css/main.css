@@ -13,7 +13,7 @@ body{
   background-color: none;
   overflow: hidden;
   height: 10%;
-  padding: 1vw;
+  padding: 0.6vw;
   z-index: 5;
   transition-duration: 0.2s;
 }
@@ -38,6 +38,7 @@ body{
 .logo:hover{
 	opacity: 1;
 	transition-duration: 0.2s;
+  cursor: pointer;
 }
 .about{
   background-color: white;
