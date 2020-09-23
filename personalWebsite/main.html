@@ -11,22 +11,21 @@
 	<title>Nicholas Wu</title>
 </head>
 <body>
-	<div class="parallax">
+	<div class="parallax" id = "parallax">
+			<div class = "topnav" id = "topnav">
+				<img src = "Logo.png" width=4% class = "logo">
+			</div>
 		<div class="parallax__group">
 			<div class="parallax__layer parallax__layer--deep">
-				<!-- <div class="title">Base Layer</div> -->
 				<div id = "front">
-					<div class = "topnav">
-						<a href = "https://www.github.com"><img src = "Logo.png" width=4% class = "logo"></a>
-					</div>
 					<div class = "title">
 						<span style = "font-size: 5.5vw; font-family:Roboto black">Nicholas Wu</span>
 						<section class="cd-intro">
 							<h1 class="cd-headline clip">
 								<span class="cd-words-wrapper waiting" style = "font-size: 2.2vw">
-									<b class="is-visible">pizza</b>
-									<b>sushi</b>
-									<b>pasta</b>
+									<b class="is-visible">I</b>
+									<b>Can't</b>
+									<b>Code</b>
 								</span>
 							</h1>
 						</section>
@@ -36,14 +35,25 @@
 		</div>
 		<div class="parallax__group">
 			<div class="parallax__layer parallax__layer--base">
-				<div class = "about"><br><br><br><br><br><br><br><br><br><br></div>
+				<div class = "about"><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
 			</div>
 		</div>
 	</div>
+</body>
 	<script src="js/jquery-2.1.1.js"></script>
 	<script src="js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script src="js/modernizr.js"></script>
 	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-</body>
+<script>
+document.getElementById("parallax").onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.getElementById("parallax").scrollTop > 30) {
+    document.getElementById("topnav").className = "scrolled";
+  } else {
+    document.getElementById("topnav").className = "notscrolled";
+  }
+}
+</script>
 </html>
