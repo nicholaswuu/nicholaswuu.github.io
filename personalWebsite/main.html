@@ -15,15 +15,17 @@
 	<div class="parallax" id = "parallax">
 			<div class = "topnav" id = "topnav">
 				<div class="fixed-action-btn" style="position: relative; right: 0px; bottom:0px;">
-				  	<img src = "Logo.png" width="70px" class = "logo">
+				  	<img src = "Logo.png" id = "logo">
 				  </a>
-				  <ul>
+				  <ul style = "padding-left: 5px">
 				  	<li><a class="btn-floating red" href = "mailto:nicholaswu0707@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
 				    <li><a class="btn-floating" style = "background-color: #0072b1" href="https://www.linkedin.com/in/nicholas-wu-1247551b7/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
 				    <li><a class="btn-floating" style = "background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%" href="https://www.instagram.com/_nicholas.wu_/" target="_blank"><i class="fa fa-instagram" style = "font-size:24px"></i></a></li>
 				    <li><a class="btn-floating black" href = "https://github.com/nicholaswuu" target="_blank"><i class="fa fa-github" style = "color: white"></i></a></li>
 				  </ul>
 				</div>
+				<a class = "navlink">Portfolio</a>
+				<a class = "navlink">About</a>
 			</div>
 		<div class="parallax__group">
 			<div class="parallax__layer parallax__layer--deep">
@@ -59,14 +61,17 @@
 document.getElementById("parallax").onscroll = function() {myFunction()};
 
 function myFunction() {
-  if (document.getElementById("parallax").scrollTop > 30) {
+  if (document.getElementById("parallax").scrollTop > 750) {
     document.getElementById("topnav").className = "scrolled";
+    document.getElementById("logo").className = "logoScrolled";
   } else {
     document.getElementById("topnav").className = "notscrolled";
+    document.getElementById("logo").className = "logoNotScrolled";
   }
 }
 
   document.addEventListener('DOMContentLoaded', function() {
+  	document.getElementById("logo").className = "logoNotScrolled";
     var elems = document.querySelectorAll('.fixed-action-btn');
     var instances = M.FloatingActionButton.init(elems, {
       direction: 'right',
