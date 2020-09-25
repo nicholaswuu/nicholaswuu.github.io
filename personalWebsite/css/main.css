@@ -161,11 +161,27 @@ body{
 
 /* –––––––––––––––––– Responsiveness –––––––––––––––––––*/
 
-@media handheld (max-width: 1100px){
+@media (max-width: 1100px){
   #front{
     background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url("https://www.narcity.com/u/2020/06/12/1ac878f5335052a89da893a03f9dec0d.jpg");
-    background-size: cover;
-    height: 100%;
+  }
+  .header{
+    font-size: 38px;
+    padding: 30px;
+  }
+  #topnav{
+    padding: 10px;
+    padding-top: 5px;
+  }
+  .navlink {
+    padding-top: 18px;
+    font-size: 16px;
+  }
+  .title{
+    font-size: 50px;
+  }
+  .cd-words-wrapper b {
+    font-size: 18px;
   }
 }
 
