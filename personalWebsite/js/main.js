@@ -152,3 +152,36 @@ jQuery(document).ready(function($){
 		$newWord.removeClass('is-hidden').addClass('is-visible');
 	}
 });
+
+document.getElementById("parallax").onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.getElementById("parallax").scrollTop > 50) {
+    document.getElementById("topnav").className = "scrolled";
+    document.getElementById("logo").className = "logoScrolled";
+    var links = document.getElementsByClassName("navlink")
+    for(i=0; i < links.length; i++){
+    	links[i].style.color = "black"
+    }
+  } else {
+    document.getElementById("topnav").className = "notscrolled";
+    document.getElementById("logo").className = "logoNotScrolled";
+    var links = document.getElementsByClassName("navlink")
+     for(i=0; i < links.length; i++){
+    	links[i].style.color = "white"
+    }
+  }
+}
+
+  document.addEventListener('DOMContentLoaded', function() {
+  	document.getElementById("logo").className = "logoNotScrolled";
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'right',
+      hoverEnabled: false
+    });
+  });
+
+function home() {
+  document.getElementById("parallax").scrollTop = 0;
+}

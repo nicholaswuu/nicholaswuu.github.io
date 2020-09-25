@@ -1,8 +1,25 @@
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html{
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
 body{
 	font-size: 2.2vw;
+  font-family: "roboto medium", sans-serif;
+  color: white;
+}
+.header{
+  font-size: 3.8vw;
+  text-align: center;
+  padding: 3vw;
+  color: black;
+  font-family: Roboto black;
 }
 #front{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("https://cdn.betakit.com/wp-content/uploads/2020/05/toronto.jpg");
+	background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url("https://cdn.betakit.com/wp-content/uploads/2020/05/toronto.jpg");
 	background-size: cover;
 	height: 100%;
 }
@@ -16,12 +33,16 @@ body{
   z-index: 5;
   transition-duration: 0.2s;
 }
+#mainTitle{
+  font-size: 5.5vw;
+  font-family:Roboto black;
+}
 .notscrolled{
   background-color: none;
 }
 .scrolled{
   background-color: white;
-  box-shadow: 5px 5px 20px 2px #dddddd;
+  box-shadow: 1px 3px 10px 2px #dddddd;
 }
 .title{
 	position: relative;
@@ -29,6 +50,11 @@ body{
 	top: 38%; 
 	color: white;
 	text-align: center;
+}
+#logobtn{
+  position: relative;
+  right: 0px;
+  bottom:0px;
 }
 #logo{
   width: 4.7vw;
@@ -39,6 +65,12 @@ body{
 	opacity: 1;
 	transition-duration: 0.2s;
   cursor: pointer;
+}
+#linkedin{
+  background-color: #0072b1;
+}
+#insta{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 .logoNotScrolled{
   opacity: 0.5;
@@ -111,23 +143,24 @@ body{
 .navlink {
   font-size: 1.5vw;
   float: right;
-  color: black;
+  color: white;
   text-decoration: none;
-  letter-spacing: 0.05vw;
+  letter-spacing: 0.04vw;
   display: inline-block;
   padding: 1.25vw 1.25vw;
   position: relative;
   cursor: pointer;
 }
+
 .navlink:after {    
   background: none repeat scroll 0 0 transparent;
-  bottom: 7;
+  bottom: 0.5vw;
   content: "";
   display: block;
   height: 0.3vw;
-  left: 50%;
+  left: 0%;
   position: absolute;
-  background: black;
+  background: #888888;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
