@@ -1,9 +1,6 @@
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 html{
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body{
 	font-size: 2.2vw;
@@ -14,7 +11,7 @@ body{
 .header{
   font-size: 3.8vw;
   text-align: center;
-  padding: 3vw;
+  padding-bottom: 5vw;
   color: black;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -84,6 +81,13 @@ body{
 .about{
   background-color: white;
   height: 100%;
+  padding: 6vw;
+}
+
+#aboutImg{
+  float: left;
+  width: 30vw;
+  padding-top: 5vw
 }
 
 /* Parallax base styles
@@ -170,11 +174,10 @@ body{
     padding: 30px;
   }
   #topnav{
-    padding: 10px;
-    padding-top: 5px;
+    padding: 5px;
   }
   .navlink {
-    padding-top: 18px;
+    padding-top: 19px;
     font-size: 16px;
   }
   .title{
