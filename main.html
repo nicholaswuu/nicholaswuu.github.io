@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Nicholas Wu</title>
+</head>
+<body>
+	<!-- NAVIGATION BAR -->
+	<div id="topnav">
+		<a class="navlink" href="#aboutMe">About</a>
+		<a class="navlink" href="#projects">Projects</a>
+	</div>
+    <div class="parallax">
+        <div class="parallax__group">
+			<!-- LANDING SCREEN -->
+            <div class="parallax__layer parallax__layer--deep" id="landingPage">
+				<div class="title">
+					<span id="preTitle">&#128075; Hey, I'm</span>
+					<br>
+					<span id="mainTitle">Nicholas Wu</span>
+					<section class="cd-intro">
+						<span class="cd-headline clip">
+							<span class="cd-words-wrapper waiting" style="width:90px">
+								<b class="is-visible">Student</b>
+								<b>Developer</b>
+								<b>Data Analyst</b>
+								<b>Athlete</b>
+							</span>
+						</span>
+					</section>
+				</div>
+				<div id="socials">
+					<a href="#" class="fa fa-linkedin"></a>
+					<a href="#" class="fa fa-github"></a>
+					<a href="#" class="fa fa-envelope-o"></a>
+					<br>
+					<a href="#aboutMe" class="fa fa-chevron-down" aria-hidden="true"></a>
+				</div>
+            </div>
+			<!-- ABOUT ME -->
+			<div class="parallax__layer parallax__layer--base">
+				<div id="aboutMe">
+					<h1>About</h1>
+					<p>
+						Hello, I'm Nicholas Wu! I'm a student studying Computer Science at the University of Pennsylvania, with a concentration in AI. 
+						My interests currently lie in
+						<span class = "emphasis"> data analysis, machine learning, software development, and large language models (LLMs).</span>
+					</p>
+					<p>
+						I have been a fencer for 12 years, and am currently on the <span class = "emphasis"> Canadian National team </span> and the <span class = "emphasis"> Penn D1 NCAA team</span>. 
+						Besides that, I have interests in chess, astrophysics, and law, and I love trying new foods.
+					</p>
+
+					<h1>Skills</h1>
+					<h2>Languages/Platforms</h2>
+					<div class="chip">Python</div>
+					<div class="chip">SQL</div>
+					<div class="chip">Java</div>
+					<div class="chip">Tableau</div>
+					<div class="chip">Javascript</div>
+					<div class="chip">HTML5</div>
+					<div class="chip">CSS3</div>
+					<div class="chip">OCaml</div>
+					<br><br>
+					<h2>Libraries/Frameworks</h2>
+					<div class="chip">Pandas</div>
+					<div class="chip">NumPy</div>
+					<div class="chip">Matplotlib</div>
+					<div class="chip">sklearn</div>
+					<div class="chip">PyTorch</div>
+					<div class="chip">TensorFlow</div>
+					<div class="chip">React</div>
+					<div class="chip">Bootstrap</div>
+					<div class="chip">Firebase</div>
+
+					<br>
+					<a href="#projects" class="fa fa-chevron-down" aria-hidden="true"></a>
+				</div>
+			</div>
+			<!-- PROJECTS -->
+			<div class="parallax__layer parallax__layer--base" id="projects">
+				<h1>Projects</h1>
+				<!-- ROW 1 -->
+				<div class="row">
+					<!-- Portfolio Website -->
+					<div class="col-md-4">
+					  <div class="card">
+						<div class="card-image">
+						  <img src="images/portfolio.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title">Portfolio Website <a href="#" class="fa fa-code card-button"></a></span>
+							<p class = "card-text">A website to house my skills and projects, designed by me using Bootstrap and Materialize.</p>
+						</div>
+						<div class="card-action">
+							<div class="chip card-chip">Web Development</div>
+						  </div>
+					  </div>
+					</div>
+					<!-- Chinese Checkers -->
+					<div class="col-md-4">
+						<div class="card">
+						  <div class="card-image">
+							<img src="images/chineseCheckers.png">
+						  </div>
+						  <div class="card-content">
+							<span class="card-title">Chinese Checkers<a href="#" class="fa fa-code card-button"></a></span>
+							<p class = "card-text">Developed a Chinese Checkers game using Java for both the front end and back end as part of my CIS 1200 course.</p>
+						  </div>
+						  <div class="card-action">
+							<div class="chip card-chip">Java</div>
+							<div class="chip card-chip">JUnit Testing</div>
+						  </div>
+						</div>
+					</div>
+					<!-- UCC Clubs -->
+					<div class="col-md-4">
+						<div class="card">
+						  <div class="card-image">
+							<img src="images/uccClubs.png">
+						  </div>
+						  <div class="card-content">
+							<span class="card-title">UCC Clubs<a href="#" class="fa fa-code card-button"></a></span>
+							<p class = "card-text">A website to house clubs at UCC, streamlining the process of finding and joining clubs at my high school.</p>
+						  </div>
+						  <div class="card-action">
+							<div class="chip card-chip">Full-Stack Development</div>
+							<div class="chip card-chip">Firebase</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<!-- ROW 2 -->
+				<div class="row">
+					<!-- Career Catalyst -->
+					<div class="col-md-4">
+						<div class="card">
+						  <div class="card-image">
+							<img src="images/careerCatalyst.png">
+						  </div>
+						  <div class="card-content">
+							<span class="card-title">Career Catalyst <a href="#" class="fa fa-code card-button"></a></span>
+							<p class = "card-text">Designed and built front-end of iOS app gamifing the learning process for career skills for my Entrepreneurship class.</p>
+						  </div>
+						  <div class="card-action">
+							<div class="chip card-chip">App Development</div>
+							<div class="chip card-chip">Swift</div>
+						  </div>
+						</div>
+					</div>
+					<!-- Chart Finder -->
+					<div class="col-md-4">
+					  <div class="card">
+						<div class="card-image">
+						  <img src="images/chartFinder.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title">Spotify Top Charts<a href="#" class="fa fa-code card-button"></a></span>
+							<p class = "card-text">A website to discover the most popular songs based on genre, artist, and release years. Built using the Spotify API.</p>
+						</div>
+						<div class="card-action">
+							<div class="chip card-chip">Web Development</div><div class="chip card-chip">Rest API</div>
+						  </div>
+					  </div>
+					</div>
+					<div class="col-md-4">
+						<div class="card">
+						  <div class="card-image">
+							<img src="images/covidData.png">
+						  </div>
+						  <div class="card-content">
+							<span class="card-title">COVID-19 Data Visualization<a href="#" class="fa fa-code card-button"></a></span>
+							<p class = "card-text">Explored and visualized early COVID-19 cases in Toronto, discovering trends in age, gender, source of infection, and fatality.</p>
+						  </div>
+						  <div class="card-action">
+							<div class="chip card-chip">Data Visualization</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+            </div>
+			<div class="parallax__layer parallax__layer--base" id="footer">
+				<div class="container">
+					<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+						<div class="col-md-4 d-flex align-items-center">
+						<span class="mb-3 mb-md-0 text-body-secondary">Made by Nicholas Wu</span>
+						</div>
+					
+						<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+						<li class="ms-3"><a class="fa fa-linkedin footer-icon" href="#"></a></li>
+						<li class="ms-3"><a class="fa fa-github footer-icon" href="#"></a></li>
+						<li class="ms-3"><a class="fa fa-envelope-o footer-icon" href="#"></a></li>
+						</ul>
+					</footer>
+				</div>
+            </div>
+		</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

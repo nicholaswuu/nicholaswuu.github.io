@@ -1,0 +1,294 @@
+*, html {
+  scroll-behavior: smooth;
+}
+
+body {
+	font-size: 2.2vw;
+  font-family: "Noto Sans";
+  scroll-behavior: smooth;
+  color: white;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3.8vw;
+  text-align: center;
+  padding-bottom: 4vw;
+  color: black;
+  font-family: "Noto Sans";
+  font-weight: 600;
+}
+
+h1::after {
+  background: none repeat scroll 0 0 #D2B48C;
+  bottom: -10px;
+  content: "";
+  display: block;
+  height: 0.5vh;
+  position: relative;
+  width: 10vh;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.5vw;
+  text-align: center;
+  padding-bottom: 1.5vh;
+  color: black;
+  font-family: "Noto Sans";
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.5vw;
+  line-height: 2.5vw;
+  letter-spacing: 0.2vw;
+  text-align: center;
+  padding-bottom: 3vw;
+  color: black;
+  font-family: "Noto Sans";
+  font-weight: 250;
+}
+
+.title {
+	position: relative;
+	top: 38vh; 
+	color: black;
+	text-align: center;
+  align-items: center;
+  font-family: "Noto Sans";
+}
+
+#landingPage {
+  min-height: 100vh;
+  overflow: hidden;
+	background-image: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4) ), url("https://cdn.betakit.com/wp-content/uploads/2020/05/toronto.jpg");
+	background-size: cover;
+}
+
+#preTitle {
+  font-weight: 250;
+  font-size: 3vw;
+  padding-bottom: 2vh;
+}
+
+#mainTitle {
+  font-weight: 600;
+  font-size: 4.5vw;
+}
+
+#socials {
+	position: relative;
+	top: 60vh;
+  text-align: center;
+}
+
+.fa {
+  color: black;
+  opacity: 0.5;
+  padding: 1vh;
+  font-size: 3vh;
+  width: 5vh;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  color: black;
+  opacity: 1;
+}
+
+.emphasis {
+  color: #D2B48C;
+  font-weight: 400;
+}
+
+#aboutMe {
+  background-color: #ffffff;
+  position: relative;
+  opacity: 0.95;
+  height: auto;
+  padding: 10vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  text-align: center;
+}
+
+#aboutImg {
+  float: left;
+  width: 30vw;
+  padding-top: 5vw
+}
+
+.chip {
+  height: 4vh;
+  font-size: 1vw;
+  padding: 0 1vw;
+  line-height: 4vh;
+}
+
+.chip:hover {
+  background-color: #D2B48C;
+}
+
+#projects {
+  background-color: #FFF7ED;
+  padding: 6vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  height: auto;
+}
+
+.project-list {
+  margin-top: 2vw;
+}
+
+#footer {
+  background-color: #D2B48C;
+  padding: 2vw;
+  font-size: 1vw;
+  color: white;
+}
+
+.footer-icon {
+  color: white;
+  opacity: 1;
+  font-size: 1.5vw; 
+}
+
+.footer-icon:hover {
+  color: white;
+  opacity: 0.7;
+}
+
+/* –––––––––––––––––––––––– NAV BAR –––––––––––––––––––––––––*/
+
+#topnav {
+  top: 0;
+  position: fixed;
+  text-align: center;
+  overflow: hidden;
+  width: 100vw;
+  padding: 1vh;
+  z-index: 5;
+  transition-duration: 0.2s;
+}
+
+.navlink {
+  font-size: 1vw;
+  font-family: "Noto Sans";
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.04vw;
+  display: inline-block;
+  padding: 1.25vw 1.25vw;
+  position: relative;
+  cursor: pointer;
+}
+
+.navlink:hover {
+  color: black;
+}
+
+.navlink:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0.5vw;
+  content: "";
+  display: block;
+  height: 0.3vw;
+  left: 0%;
+  position: absolute;
+  background: #D2B48C;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navlink:hover:after { 
+  width: 50%; 
+  left: 23%;
+}
+
+/* –––––––––––––––––––––––– CARD STYLES –––––––––––––––––––––––––*/
+
+.card .card-content {
+  padding: 2vh;
+  text-align: left;
+  padding-bottom: 0;
+}
+
+.card .card-image {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.card .card-title {
+  color: black;
+  font-size: 2vh;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
+.card-button {
+  float: right;
+  padding: 0;
+  align-items: center;
+}
+
+.card-button:hover {
+  color: #D2B48C;
+}
+
+.card-chip {
+  height: 3vh;
+  font-size: 0.8vw;
+  padding: 0 1vw;
+  line-height: 3vh;
+}
+
+.card-text {
+  color: black;
+  text-align: left;
+  font-size: 1vw;
+  letter-spacing: normal;
+  line-height: 2.5vh;
+  padding-bottom: 0;
+}
+
+.card .card-action{
+  border-top: none;
+  padding: 1vh 1.2vw;
+}
+
+/* –––––––––––––––––––––––– PARALLAX STYLES –––––––––––––––––––––––––*/
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 30vh;
+}
+
+.parallax__group {
+  top: auto;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+.parallax__layer--deep {
+  transform: translateZ(-35vh) scale(2.17);
+  z-index: 2;
+}
