@@ -62,7 +62,7 @@ p {
 #landingPage {
   min-height: 100vh;
   overflow: hidden;
-	background-image: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4) ), url("https://cdn.betakit.com/wp-content/uploads/2020/05/toronto.jpg");
+	background-image: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4) ), url("../images/landing-bg.jpg");
 	background-size: cover;
 }
 
