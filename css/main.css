@@ -2,8 +2,38 @@
   scroll-behavior: smooth;
 }
 
+@media (max-width: 450px) {
+  html {
+      font-size: 3vw;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+      font-size: 2vw;
+  }
+}
+
+@media (min-width: 600px) {
+  html {
+      font-size: 1.5vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  html {
+      font-size: 1.2vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+      font-size: 1vw;
+  }
+}
+
 body {
-	font-size: 2.2vw;
+	font-size: 2.2rem;
   font-family: "Noto Sans";
   scroll-behavior: smooth;
   color: white;
@@ -11,7 +41,7 @@ body {
 }
 
 h1 {
-  font-size: 3.8vw;
+  font-size: 3.8rem;
   text-align: center;
   padding-bottom: 4vw;
   color: black;
@@ -31,7 +61,7 @@ h1::after {
 }
 
 h2 {
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   text-align: center;
   padding-bottom: 1.5vh;
   color: black;
@@ -40,8 +70,8 @@ h2 {
 }
 
 p {
-  font-size: 1.5vw;
-  line-height: 2.5vw;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   letter-spacing: 0.2vw;
   text-align: center;
   padding-bottom: 3vw;
@@ -64,31 +94,33 @@ p {
   overflow: hidden;
 	background-image: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4) ), url("../images/landing-bg.jpg");
 	background-size: cover;
+  text-align: center;
 }
 
 #preTitle {
   font-weight: 250;
-  font-size: 3vw;
+  font-size: 3rem;
   padding-bottom: 2vh;
 }
 
 #mainTitle {
   font-weight: 600;
-  font-size: 4.5vw;
+  font-size: 4.5rem;
 }
 
 #socials {
-	position: relative;
-	top: 60vh;
-  text-align: center;
+  font-size: 1rem;
+	position: fixed;
+	top: 85%;
+  width: 100%;
 }
 
 .fa {
   color: black;
   opacity: 0.5;
-  padding: 1vh;
-  font-size: 3vh;
-  width: 5vh;
+  padding: 0.6rem;
+  font-size: 2rem;
+  width: 3rem;
   text-align: center;
   text-decoration: none;
 }
@@ -108,7 +140,7 @@ p {
   position: relative;
   opacity: 0.95;
   height: auto;
-  padding: 10vh;
+  padding: 6rem;
   padding-left: 15vw;
   padding-right: 15vw;
   text-align: center;
@@ -121,10 +153,10 @@ p {
 }
 
 .chip {
-  height: 4vh;
-  font-size: 1vw;
-  padding: 0 1vw;
-  line-height: 4vh;
+  height: 2.4rem;
+  font-size: 1rem;
+  padding: 0 1rem;
+  line-height: 2.4rem;
 }
 
 .chip:hover {
@@ -145,15 +177,15 @@ p {
 
 #footer {
   background-color: #D2B48C;
-  padding: 2vw;
-  font-size: 1vw;
+  padding: 2rem;
+  font-size: 1rem;
   color: white;
 }
 
 .footer-icon {
   color: white;
   opacity: 1;
-  font-size: 1.5vw; 
+  font-size: 1.5rem; 
 }
 
 .footer-icon:hover {
@@ -175,7 +207,7 @@ p {
 }
 
 .navlink {
-  font-size: 1vw;
+  font-size: 1rem;
   font-family: "Noto Sans";
   color: black;
   text-decoration: none;
@@ -211,7 +243,7 @@ p {
 /* –––––––––––––––––––––––– CARD STYLES –––––––––––––––––––––––––*/
 
 .card .card-content {
-  padding: 2vh;
+  padding: 1.4rem;
   text-align: left;
   padding-bottom: 0;
 }
@@ -222,17 +254,19 @@ p {
   overflow: hidden;
 }
 
-.card .card-title {
+.card .card-content .card-title {
   color: black;
-  font-size: 2vh;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  margin-bottom: 1rem;
   letter-spacing: normal;
   font-weight: 400;
 }
 
 .card-button {
   float: right;
+  font-size: 1.4rem;
   padding: 0;
-  align-items: center;
 }
 
 .card-button:hover {
@@ -240,24 +274,24 @@ p {
 }
 
 .card-chip {
-  height: 3vh;
-  font-size: 0.8vw;
+  height: 1.8rem;
+  font-size: 0.8rem;
   padding: 0 1vw;
-  line-height: 3vh;
+  line-height: 1.8rem;
 }
 
 .card-text {
   color: black;
   text-align: left;
-  font-size: 1vw;
+  font-size: 1rem;
   letter-spacing: normal;
-  line-height: 2.5vh;
+  line-height: 1.5rem;
   padding-bottom: 0;
 }
 
 .card .card-action{
   border-top: none;
-  padding: 1vh 1.2vw;
+  padding: 1vh 1.2rem;
 }
 
 /* –––––––––––––––––––––––– PARALLAX STYLES –––––––––––––––––––––––––*/
