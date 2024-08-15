@@ -6,6 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
@@ -17,6 +20,7 @@
 	<!-- NAVIGATION BAR -->
 	<div id="topnav">
 		<a class="navlink" href="#aboutMe">About</a>
+		<a class="navlink" href="#experience">Experience</a>
 		<a class="navlink" href="#projects">Projects</a>
 	</div>
     <div class="parallax">
@@ -25,7 +29,7 @@
             <div class="parallax__layer parallax__layer--deep" id="landingPage">
 				<div class="title">
 					<span id="preTitle">&#128075; Hey, I'm</span>
-					<br>
+					<br><br>
 					<span id="mainTitle">Nicholas Wu</span>
 					<section class="cd-intro">
 						<span class="cd-headline clip">
@@ -49,29 +53,27 @@
 			<!-- ABOUT ME -->
 			<div class="parallax__layer parallax__layer--base">
 				<div id="aboutMe">
-					<h1>About</h1>
+					<h1>About Me</h1>
 					<p>
-						Hello, I'm Nicholas Wu! I'm a student studying Computer Science at the University of Pennsylvania, with a concentration in AI. 
-						My interests currently lie in
-						<span class = "emphasis"> data analysis</span> and <span class = "emphasis">machine learning.</span>
+						Hello, I'm Nicholas Wu! I'm a student studying Computer Science at the <span class = "emphasis">University of Pennsylvania</span>, with a concentration in AI. 
+						My interests currently lie in <span class = "emphasis">data analysis</span> and <span class = "emphasis">machine learning.</span>
 					</p>
 					<p>
-						I have been a fencer for 12 years, and am currently on the <span class = "emphasis"> Canadian National team </span> and the <span class = "emphasis"> Penn D1 NCAA team</span>. 
+						I have been a fencer for 12 years, and am currently on the Canadian National team and the UPenn D1 NCAA team. 
 						Besides that, I have interests in chess, astrophysics, and law, and I love trying new foods.
 					</p>
 
 					<h1>Skills</h1>
-					<h2>Languages/Platforms</h2>
+					<h2>Languages</h2>
 					<div class="chip">Python</div>
 					<div class="chip">SQL</div>
 					<div class="chip">Java</div>
-					<div class="chip">Tableau</div>
 					<div class="chip">Javascript</div>
 					<div class="chip">HTML5</div>
 					<div class="chip">CSS3</div>
 					<div class="chip">OCaml</div>
 					<br><br>
-					<h2>Libraries/Frameworks</h2>
+					<h2>Libraries & Frameworks</h2>
 					<div class="chip">Pandas</div>
 					<div class="chip">NumPy</div>
 					<div class="chip">Matplotlib</div>
@@ -79,13 +81,62 @@
 					<div class="chip">PyTorch</div>
 					<div class="chip">TensorFlow</div>
 					<div class="chip">React</div>
-					<div class="chip">Bootstrap</div>
+					<div class="chip">Plotly</div>
+					<div class="chip">Dash</div>
+					<br><br>
+					<h2>Tools & Platforms</h2>
+					<div class="chip">Tableau</div>
+					<div class="chip">Docker</div>
+					<div class="chip">Git</div>
+					<div class="chip">Github</div>
 					<div class="chip">Firebase</div>
-
-					<br>
-					<a href="#projects" class="fa fa-chevron-down" aria-hidden="true"></a>
+					<br><br>
+					<a href="#experience" class="fa fa-chevron-down" aria-hidden="true"></a>
 				</div>
 			</div>
+			<!-- EXPERIENCE -->
+			<div class="parallax__layer parallax__layer--base" id="experience">
+				<h1>Experience</h1>
+				<ol>
+					<a href="https://www.techforgoodinc.org/", target="_blank">
+						<li class="experienceCard container row justify-content-center">
+							<div class="col-md-3 expDates">July 2024 - Present</div>
+							<div class="col-md-1"><img src="images/TFG_logo.jpeg" class="expLogo"></div>
+							<div class="col-md-8 expBody">
+								<div class="expTitle">Tech for Good Inc.</div>
+								<div class="expSubtitle">Software Engineer Intern</div>
+								<div class="expBody">
+									Initiated the development of an electronic healthcare record management platform for health clinics in Tanzania. 
+									Designed and developed a dashboard enabling processing and visualization of disease outbreak data.
+									Collaborated with healthcare workers in Tanzania, refining data visualization tools to improve usability and ensure coverage of the most relevant data for healthcare professionals.
+								</div>
+								<div>
+									<div class="chip">Pandas</div>
+									<div class="chip">Plotly</div>
+									<div class="chip">Dash</div>
+									<div class="chip">Github</div>
+								</div>
+							</div>
+						</li>
+					</a>
+					<a href="https://www.davidsabrams.com/", target="_blank">
+						<li class="experienceCard container row justify-content-center">
+							<div class="col-md-3 expDates">June 2024 - Present</div>
+							<div class="col-md-1"><img src="images/pennlaw.png" class="expLogo"></div>
+							<div class="col-md-8 expBody">
+								<div class="expTitle">University of Pennsylvania Carey Law</div>
+								<div class="expSubtitle">Research Assistant</div>
+								<div class="expBody">
+									Working with Professor David Abrams to collect and analyze police stop-and-frisk data across major US cities, contributing to a research project understanding the differences
+									in the use of investigatory stops across the US.
+									Obtained and compiled 20+ datasets from city officials and public portals, ensuring comprehensive data coverage.
+								</div>
+							</div>
+						</li>
+					</a>
+				</ol>
+				<a href="#projects" class="fa fa-chevron-down" aria-hidden="true"></a>
+            </div>
 			<!-- PROJECTS -->
 			<div class="parallax__layer parallax__layer--base" id="projects">
 				<h1>Projects</h1>
@@ -95,15 +146,15 @@
 					<div class="col-md-4">
 					  <div class="card">
 						<div class="card-image">
-						  <img src="images/solarForecaster.png">
+						  <a href="https://www.kaggle.com/datasets/nickwu7/solar-radiation-and-climate-data" target="_blank"><img src="images/solarForecaster.png"></a>
 						</div>
 						<div class="card-content">
 							<span class="card-title">Solar Radiation Forecaster <a href="https://www.kaggle.com/datasets/nickwu7/solar-radiation-and-climate-data" class="fa fa-code card-button" target="_blank"></a></span>
 							<p class = "card-text">Collected, cleaned and processed NOAA solar and climate data, training machine learning model to predict solar radiation.</p>
 						</div>
 						<div class="card-action">
-							<div class="chip card-chip">Data Analysis</div>
-							<div class="chip card-chip">Machine Learning</div>
+							<div class="chip">Data Analysis</div>
+							<div class="chip">Machine Learning</div>
 						</div>
 					  </div>
 					</div>
@@ -111,14 +162,14 @@
 					<div class="col-md-4">
 						<div class="card">
 						  <div class="card-image">
-							<img src="images/portfolio.png">
+							<a href="https://github.com/nicholaswuu/PortfolioWebsite" target="_blank"><img src="images/portfolio.png"></a>
 						  </div>
 						  <div class="card-content">
 							  <span class="card-title">Portfolio Website <a href="https://github.com/nicholaswuu/PortfolioWebsite" class="fa fa-code card-button" target="_blank"></a></span>
 							  <p class = "card-text">A website to house my skills and projects, designed by me using Bootstrap and Materialize.</p>
 						  </div>
 						  <div class="card-action">
-							  <div class="chip card-chip">Web Development</div>
+							  <div class="chip">Web Development</div>
 							</div>
 						</div>
 					  </div>
@@ -126,15 +177,15 @@
 					  <div class="col-md-4">
 						  <div class="card">
 							<div class="card-image">
-							  <img src="images/chineseCheckers.png">
+							  <a href="https://github.com/nicholaswuu/ChineseCheckers" target="_blank"><img src="images/chineseCheckers.png"></a>
 							</div>
 							<div class="card-content">
 							  <span class="card-title">Chinese Checkers<a href="https://github.com/nicholaswuu/ChineseCheckers" class="fa fa-code card-button" target="_blank"></a></span>
 							  <p class = "card-text">Developed a Chinese Checkers game using Java for both the front end and back end as part of my CIS 1200 course.</p>
 							</div>
 							<div class="card-action">
-							  <div class="chip card-chip">Java</div>
-							  <div class="chip card-chip">JUnit Testing</div>
+							  <div class="chip">Java</div>
+							  <div class="chip">JUnit Testing</div>
 							</div>
 						  </div>
 					  </div>
@@ -145,15 +196,15 @@
 					<div class="col-md-4">
 						<div class="card">
 						  <div class="card-image">
-							<img src="images/uccClubs.png">
+							<a href="https://github.com/nicholaswuu/UCC-Clubs" target="_blank"><img src="images/uccClubs.png"></a>
 						  </div>
 						  <div class="card-content">
 							<span class="card-title">UCC Clubs<a href="https://github.com/nicholaswuu/UCC-Clubs" class="fa fa-code card-button" target="_blank"></a></span>
 							<p class = "card-text">A website to house clubs at UCC, streamlining the process of finding and joining clubs at my high school.</p>
 						  </div>
 						  <div class="card-action">
-							<div class="chip card-chip">Full-Stack Development</div>
-							<div class="chip card-chip">Firebase</div>
+							<div class="chip">Full-Stack Development</div>
+							<div class="chip">Firebase</div>
 						  </div>
 						</div>
 					</div>
@@ -161,15 +212,15 @@
 					<div class="col-md-4">
 						<div class="card">
 						  <div class="card-image">
-							<img src="images/careerCatalyst.png">
+							<a href="https://github.com/nicholaswuu/CareerCatalyst" target="_blank"><img src="images/careerCatalyst.png"></a>
 						  </div>
 						  <div class="card-content">
 							<span class="card-title">Career Catalyst <a href="https://github.com/nicholaswuu/CareerCatalyst" class="fa fa-code card-button" target="_blank"></a></span>
 							<p class = "card-text">Designed and built front-end of iOS app gamifing the learning process for career skills for my Entrepreneurship class.</p>
 						  </div>
 						  <div class="card-action">
-							<div class="chip card-chip">App Development</div>
-							<div class="chip card-chip">Swift</div>
+							<div class="chip">App Development</div>
+							<div class="chip">Swift</div>
 						  </div>
 						</div>
 					</div>
@@ -177,14 +228,14 @@
 					<div class="col-md-4">
 					  <div class="card">
 						<div class="card-image">
-						  <img src="images/chartFinder.png">
+						 <a href="https://github.com/nicholaswuu/ChartFinder" target="_blank"><img src="images/chartFinder.png"></a>
 						</div>
 						<div class="card-content">
 							<span class="card-title">Spotify Top Charts<a href="https://github.com/nicholaswuu/ChartFinder" class="fa fa-code card-button" target="_blank"></a></span>
 							<p class = "card-text">A website to discover the most popular songs based on genre, artist, and release years. Built using the Spotify API.</p>
 						</div>
 						<div class="card-action">
-							<div class="chip card-chip">Web Development</div><div class="chip card-chip">REST API</div>
+							<div class="chip">Web Development</div><div class="chip card-chip">REST API</div>
 						  </div>
 					  </div>
 					</div>
@@ -195,15 +246,15 @@
 					<div class="col-md-4">
 						<div class="card">
 						  <div class="card-image">
-							<img src="images/covidData.png">
+							<a href="https://github.com/nicholaswuu/Toronto-Covid-DataVis" target="_blank"><img src="images/covidData.png"></a>
 						  </div>
 						  <div class="card-content">
 							<span class="card-title">COVID-19 Data Visualization<a href="https://github.com/nicholaswuu/Toronto-Covid-DataVis" class="fa fa-code card-button" target="_blank"></a></span>
 							<p class = "card-text">Explored and visualized early COVID-19 cases in Toronto, discovering trends in age, gender, source of infection, and fatality.</p>
 						  </div>
 						  <div class="card-action">
-							<div class="chip card-chip">Data Preprocessing</div>
-							<div class="chip card-chip">Data Visualization</div>
+							<div class="chip">Data Preprocessing</div>
+							<div class="chip">Data Visualization</div>
 						  </div>
 						</div>
 					</div>
