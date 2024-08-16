@@ -15,6 +15,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 body {
 	font-size: 2.2rem;
   font-family: "Noto Sans";
@@ -192,7 +198,7 @@ ol a {
   color: black;
   font-style: italic;
   font-weight: 300;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .expTitle{
@@ -316,7 +322,7 @@ ol a {
 
 .card .card-content .card-title {
   color: black;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.2rem;
   margin-bottom: 0.8rem;
   letter-spacing: normal;
@@ -335,7 +341,7 @@ ol a {
 
 .card .chip {
   height: 1.8rem;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   padding: 0 1vw;
   line-height: 1.8rem;
 }
