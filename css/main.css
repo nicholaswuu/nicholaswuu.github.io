@@ -3,21 +3,30 @@
   font-size: 16px;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 850px) {
   html {
     font-size: 15px;
   }
+  .section{
+    padding: 8vh 15vw;
+  }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 850px) {
   html {
     font-size: 14px;
+  }
+  .section{
+    padding: 8vh 8vw;
   }
 }
 
 @media (max-width: 500px) {
   html {
     font-size: 12px;
+  }
+  .section{
+    padding: 8vh 5vw;
   }
 }
 
@@ -69,10 +78,6 @@ p {
   color: black;
   font-family: "Noto Sans";
   font-weight: 300;
-}
-
-.section{
-  padding: 8vh 15vw;
 }
 
 /* –––––––––––––––––––––––– TITLE COMPONENTS –––––––––––––––––––––––––*/
@@ -191,6 +196,7 @@ ol a {
 .expLogo{
   border-radius: 25%;
   width: 100%;
+  max-width: 60px;
   height: auto;
 }
 
