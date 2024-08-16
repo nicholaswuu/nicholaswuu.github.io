@@ -155,7 +155,7 @@ jQuery(document).ready(function($){
 
 $(document).ready(function() {
 	$(".parallax").scroll(function() {
-	  if ($(this).scrollTop() > 100) {
+	  if ($(this).scrollTop() > 500) {
 		$("#topnav").css("background-color", "white");
 	  } else {
 		$("#topnav").css("background-color", "transparent");
