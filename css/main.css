@@ -119,9 +119,11 @@ p {
 
 #socials {
   font-size: 1rem;
-	position: sticky;
-	top: 85%;
+	position: fixed;
+	top: 85vh;
+  text-align: center;
   width: 100%;
+  transition: opacity 0.5s ease;
 }
 
 .fa {

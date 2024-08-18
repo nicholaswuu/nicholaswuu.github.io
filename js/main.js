@@ -155,11 +155,16 @@ jQuery(document).ready(function($){
 
 $(document).ready(function() {
 	$(".parallax").scroll(function() {
-	  if ($(this).scrollTop() > 500) {
+		if ($(this).scrollTop() > 10) {
+			$("#socials").css("opacity", "0");
+		} else {
+			$("#socials").css("opacity", "1");
+		}
+		if ($(this).scrollTop() > 200) {
 		$("#topnav").css("background-color", "white");
-	  } else {
+		} else {
 		$("#topnav").css("background-color", "transparent");
-	  }
+		}
 	});
 });
 
