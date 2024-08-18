@@ -94,12 +94,10 @@ p {
 	position: relative;
 	top: 34%; 
 	color: black;
-	text-align: center;
-  align-items: center;
 }
 
 #landingPage {
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
 	background-image: linear-gradient( rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.9) ), url("../images/landing-bg.jpg");
 	background-size: cover;
@@ -121,7 +119,7 @@ p {
 
 #socials {
   font-size: 1rem;
-	position: fixed;
+	position: sticky;
 	top: 85%;
   width: 100%;
 }
@@ -385,7 +383,7 @@ ol a {
 /* –––––––––––––––––––––––– PARALLAX STYLES –––––––––––––––––––––––––*/
 
 .parallax {
-  height: 100vh;
+  height: 100dvh;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 30vh;
@@ -407,10 +405,8 @@ ol a {
 
 .parallax__layer--base {
   transform: translateZ(0);
-  z-index: 4;
 }
 
 .parallax__layer--deep {
   transform: translateZ(-35vh) scale(2.17);
-  z-index: 2;
 }
